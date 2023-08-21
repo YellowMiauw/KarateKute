@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" utf-8" />
+        <title> KarateKute </title>
+        <link rel="stylesheet" href="./stilazo.css">
+        
+        
+        
+    </head>
+    <body class="body">
+
+            <section id="seleccionar-animalito">
+                <h1 class="title"> 🍃🌊☀️ KarateKute ☀️🌊🍃</h1>
+
+                <h2 class="subtitulo"> selecciona tu animalito: </h2>
+
+             <div id="ContenedorTarjetas" class="tarjetas">
+                
+             </div>
+ 
+
+                <button id="button-animalito"> seleccionar </button>
+
+            </section>
+
+            <section id ="ver-mapa">
+                <h2 class="subtitulo"> Recorre el mapa con tu animalito: </h2>
+                <canvas id="mapa"></canvas>
+             <div class="flechas">
+                <button id = "left" onpointerup="detenerMovimiento()" onpointerdown="moverIzquierda()">⬅️</button>
+                <button id = "down" onpointerup="detenerMovimiento()" onpointerdown="moverAbajo()">⬇️</button>
+                <button id = "right" onpointerup="detenerMovimiento()" onpointerdown="moverDerecha()">➡️</button>
+                <button id = "up" onpointerup="detenerMovimiento()" onpointerdown="moverArriba()">⬆️</button>
+              </div>
+            </section>
+
+            <section id="seleccionar-distraccion">
+                <h1 class="title"> KarateKute ☀️🌊🍃</h1>
+
+                <h2> selecciona tu distraccion: </h2>
+
+                <div id = "contenedorDistracciones" >
+                    
+                </div>
+
+                
+                <div id="mensajes">
+                 <p id="resultado">Mucha Suerte!</p>
+                  
+                        
+                    <section id="reiniciar">
+                     <button id="button-reiniciar"> Reiniciar </button>   
+            
+                    <section>
+                </div>
+
+                <div class="columnas">
+                    <div class="columna-Jugador">
+                        <p id="victorias-Player">0</p>
+                        <p id="animalito-player"></p>
+                        <div id="distraccion-Jugador"></div>
+                       
+                    </div> 
+
+                    <div class="columna-Enemigo">
+                        <p id="victorias-Enemy"> 0 </p>
+                        <p id="animalito-enemy"></p>
+                        <div id="distraccion-Enemigo"></div>
+
+                    </div> 
+                    
+
+                
+                </div>
+                
+                
+            </section>   
+            
+         <script src="/Mazamorra.js"></script>
+    </body>
+</html>

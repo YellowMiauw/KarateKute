@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css2?family=Comme:wght@700&family=Fugaz+One&display=swap)
+; :root {
+
+font-family: 'Comme', sans-serif;
+
+}
+
+html {
+    margin: 0px;
+    min-height: 100vh;
+    
+ }
+
+body {
+    background-image:linear-gradient(to right, #fbc2eb, #78a3eb);
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.title {
+    
+    color: #FF26A3;
+    width: 536px;
+    height: 64px;
+    background-color: #55E4FF;
+    padding: 17px;
+    box-shadow: 5px 10px 15px mintcream;
+    text-shadow: 3px 6px 9px white;
+    border-radius: 9px;
+    font-size: 2.3rem;
+    font-family: "Fugaz one", cursive;
+
+}
+
+.subtitulo{
+   font-size: 1.5em ; 
+}
+
+#seleccionar-animalito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.tarjeta-animalito{
+    width: 137px;
+    height: 170px;
+    background: beige;
+    padding: 14px;
+    box-sizing: border-box;
+    margin: 20px;
+    border: 6px solid lavender;
+    box-shadow: 5px 10px 15px white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+}
+
+input {
+ display: none;
+}
+
+input:checked + label {
+    background-color: aquamarine;
+}
+
+.tarjeta-animalito img {
+    width: 84px;
+    height: 74px;
+    
+}
+
+.tarjeta-animalito:hover {
+    cursor: pointer;
+}
+
+
+
+#button-animalito {
+    width: 289px;
+    height: 90px;
+    background: deeppink;
+    padding: 11px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 15px hotpink;
+    margin: 20px;
+    border-radius: 33px;
+    font-size: 2rem;
+    border: 10px solid hotpink;
+    color: white;
+}
+
+#button-animalito:hover{
+    cursor: pointer;
+}
+
+#seleccionar-distraccion {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-distraccion{
+    width: 176px;
+    height: 81px;
+    background: #8B1874;
+    padding: 11px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 15px #1D267D;
+    margin: 20px;
+    border-radius: 33px;
+    font-size: 1.5rem;
+    border: 10px solid #C9A7EB;
+    color: white;
+    font-family: 'Comme', sans-serif;
+}
+
+.boton-distraccion:hover{
+    cursor: pointer;
+}
+
+#mensajes{
+    
+    background: #A10035;
+    width: 378px;
+    height: 86px;
+    border: 11px inset #A10035;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    box-shadow: 5px;
+    margin-top: 24px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 1px 0px 8px yellow;
+}
+
+#button-reiniciar {
+    /*background-color: #FF26A3;*/
+    background-color: chocolate;
+    font-family: 'Comme',sans-serif;
+    font-size: 1rem;
+    color: lemonchiffon;
+    border: dotted;
+    
+}
+
+#button-reiniciar:hover{
+    cursor: pointer;
+}
+
+#resultado {
+    display: flex;
+    margin-bottom: -1px;
+    margin-top: 11px;
+}
+
+.columnas {
+    display:grid;
+    grid-template-columns: 100px 100px;
+}
+
+.columna-Jugador, .columna-Enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vidas-Player {
+    margin-bottom: -3px;
+}
+
+#vidas-Enemy{
+    margin-bottom: -3px;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa {
+   border: 2px solid white;
+} 
+
+@media (max-width: 400px) {
+.tarjetas, .tarjeta-animalito {
+ flex-direction: column;}
+ 
+ html {
+    margin: 0px;
+    min-height: 100vh;
+    width: 100vh;
+ }
+
+body {
+    background-image:linear-gradient(to right, #fbc2eb, #78a3eb);
+    text-align: center;
+    min-height: 100vh;
+    width: 100vh;
+    margin: 0;
+}
+
+}
+.flechas {
+    display: grid;
+    gap: .25rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 10px;
+}
+
+#up {
+    grid-column: 2/3;
+}
+
+#right {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#down {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+
+    
